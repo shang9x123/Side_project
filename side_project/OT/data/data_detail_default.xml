@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="detail_1" model="overtime_detail">
+            <field name="employee">1</field>
+            <field name="department">4</field>
+            <field name="date">2020-01-15</field>
+            <field name="ot_rate">0.2</field>
+            <field name="ot_time">3</field>
+            <field name="reason">fix bug model Times</field>
+            <field name="status">done</field>
+        </record>
+
+        <record id="detail_2" model="overtime_detail">
+            <field name="employee">2</field>
+            <field name="department">2</field>
+            <field name="date">2020-01-09</field>
+            <field name="ot_rate">0.1</field>
+            <field name="ot_time">1</field>
+            <field name="reason">Chưa đạt doanh số</field>
+            <field name="status">reject</field>
+        </record>
+
+        <record id="detail_3" model="overtime_detail">
+            <field name="employee">3</field>
+            <field name="department">5</field>
+            <field name="date">2020-01-16</field>
+            <field name="ot_rate">0.5</field>
+            <field name="ot_time">5</field>
+            <field name="status">wait</field>
+        </record>
+
+        <record id="detail_4" model="overtime_detail">
+            <field name="employee">4</field>
+            <field name="department">1</field>
+            <field name="date">2020-01-13</field>
+            <field name="ot_rate">0.1</field>
+            <field name="ot_time">3</field>
+            <field name="status">draft</field>
+        </record>
+
+        <record id="detail_5" model="overtime_detail">
+            <field name="employee">1</field>
+            <field name="department">4</field>
+            <field name="date">2020-01-16</field>
+            <field name="ot_rate">0.2</field>
+            <field name="ot_time">3</field>
+            <field name="status">wait</field>
+        </record>
+        <record id="detail_6" model="overtime_detail">
+            <field name="employee">5</field>
+            <field name="department">3</field>
+            <field name="date">2020-01-20</field>
+            <field name="ot_rate">0.2</field>
+            <field name="ot_time">3</field>
+            <field name="status">wait</field>
+        </record>
+    </data>
+</odoo>
