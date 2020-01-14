@@ -3,6 +3,7 @@ from odoo import fields, models
 class overtime_management(models.Model):
     _name = "overtime_management"
     _description = "Phiếu làm thêm"
+    _rec_name = 'department'
 
 
     department = fields.Many2one(comodel_name='hr.department', string='Phòng ban',required=True)

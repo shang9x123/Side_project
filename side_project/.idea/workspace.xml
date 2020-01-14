@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77f6b00a-3b73-4a4f-a7d6-14dc90915f68" name="Default Changelist" comment="" />
+    <list default="true" id="77f6b00a-3b73-4a4f-a7d6-14dc90915f68" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/OT/data/data_management_default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OT/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/OT/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OT/data/data_detail_default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OT/data/data_detail_default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OT/models/overtime_detail.py" beforeDir="false" afterPath="$PROJECT_DIR$/OT/models/overtime_detail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OT/models/overtime_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/OT/models/overtime_management.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OT/views/overtime_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OT/views/overtime_detail.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
