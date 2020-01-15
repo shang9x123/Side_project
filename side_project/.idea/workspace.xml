@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77f6b00a-3b73-4a4f-a7d6-14dc90915f68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/OT/data/data_management_default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OT/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/OT/__manifest__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OT/data/data_detail_default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OT/data/data_detail_default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OT/models/overtime_detail.py" beforeDir="false" afterPath="$PROJECT_DIR$/OT/models/overtime_detail.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OT/models/overtime_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/OT/models/overtime_management.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OT/views/overtime_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OT/views/overtime_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OT/views/overtime_management.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OT/views/overtime_management.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,5 +52,11 @@
       <updated>1578973509749</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="304" y="158" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578994525342">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="304" y="158" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.947@0.23.1680.947" timestamp="1578994525342" />
   </component>
 </project>

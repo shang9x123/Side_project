@@ -1,5 +1,5 @@
 {
-'name': 'Làm thêm',
+'name': 'Overtime - please install module Employee before',
 'description': 'Over time',
 'author': 'Nguyễn Ngọc Hải ( Harvey )',
 'depends': ['base'],

@@ -22,12 +22,16 @@
             <field name="model">overtime_management</field>
             <field name="arch" type="xml">
                 <form string="Phiếu làm thêm">
+                    <header>
+                        <button name="action_approved" stype="object" string="Phê duyệt" class="oe_highlight"/>
+                        <field name="status" widget="statusbar"/>
+                    </header>
                     <group>
-                        <field name="department"/>
-                        <field name="date"/>
-                        <field name="ot_rate"/>
-                        <field name="ot_sum"/>
-                        <field name="reason"/>
+                            <field name="department"/>
+                            <field name="date"/>
+                            <field name="ot_rate"/>
+                            <field name="ot_sum"/>
+                            <field name="reason"/>
                     </group>
                     <group>
                         <field name="detail">
@@ -36,7 +40,6 @@
                                 <field name="ot_time"/>
                             </tree>
                         </field>
-                        <field name="status"/>
                     </group>
                 </form>
             </field>
