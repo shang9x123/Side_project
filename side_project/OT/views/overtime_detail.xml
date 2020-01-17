@@ -23,6 +23,10 @@
             <field name="model">overtime_detail</field>
             <field name="arch" type="xml">
                 <form string="Chi tiết làm thêm">
+                    <header>
+                        <button name="change_wait" type="object" string="Chờ phê duyệt" class="btn btn-warning"/>
+                        <field name="status" widget="statusbar"/>
+                    </header>
                     <group>
                         <field name="employee"/>
                         <field name="department"/>
@@ -30,8 +34,7 @@
                         <field name="ot_rate"/>
                         <field name="ot_time"/>
                         <field name="reason"/>
-                        <field name="status"/>
-                        <field name="management"/>
+                        <field name="management" options='{"no_open": True}' domain="[('status','=','done')]"/>
                     </group>
                 </form>
             </field>

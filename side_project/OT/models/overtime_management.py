@@ -1,11 +1,11 @@
-from odoo import fields, models, api
+from odoo import fields, models , api
 
 class overtime_management(models.Model):
     _name = "overtime_management"
     _description = "Phiếu làm thêm"
-    _rec_name = 'department'
+    _rec_name = 'subject'
 
-
+    subject = fields.Char(string='Mô tả', required=True)
     department = fields.Many2one(comodel_name='hr.department', string='Phòng ban',required=True)
     date = fields.Date(string='Ngày làm thêm', required=True)
     ot_rate = fields.Float("Tỷ lệ làm thêm", required=True)
@@ -17,8 +17,16 @@ class overtime_management(models.Model):
                                                              ('reject', 'Bị từ chối')], default='draft')
 
     def action_approved(self):
-        for rec in self.detail:
-            rec.status = 'done'
+        for rec in self:
+            for line in rec.detail:
+                line.status = 'done'
+        self.status = 'done'
+
+    def action_reject(self):
+        for rec in self:
+            for line in rec.detail:
+                line.status = 'reject'
+        self.status = 'reject'
 
     def _sum_ot(self):
         sum = 0

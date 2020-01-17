@@ -1,10 +1,10 @@
-from odoo import fields, models
+from odoo import fields, models ,api
 from datetime import datetime
 
 class overtime_detail(models.Model):
     _name = 'overtime_detail'
     _description = "Chi tiết làm thêm"
-    _rec_name = 'employee'
+    # _rec_name = 'employee'
 
     employee = fields.Many2one(comodel_name='hr.employee', string="Tên nhân viên", required=True)
     department = fields.Many2one(comodel_name='hr.department', string='Phòng ban', required=True)
@@ -17,5 +17,10 @@ class overtime_detail(models.Model):
                                                              ('done','Đã phê duyệt'),
                                                              ('reject','Bị từ chối')],default='draft')
 
-    management = fields.Many2one(comodel_name='overtime_management',string='Phiếu làm thêm')
+    management = fields.Many2one(comodel_name='overtime_management', string='Phiếu làm thêm')
+
+    def change_wait(self):
+        for rec in self:
+            rec.status = 'wait'
+
 

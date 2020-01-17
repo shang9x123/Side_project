@@ -2,6 +2,7 @@
 <odoo>
     <data>
         <record id="management_1" model="overtime_management">
+            <field name="subject">Hello_babe</field>
             <field name="department">4</field>
             <field name="date">2020-01-15</field>
             <field name="reason">fix bug model OT</field>
