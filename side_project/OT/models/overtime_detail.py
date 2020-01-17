@@ -1,6 +1,6 @@
 from odoo import fields, models ,api
 from datetime import datetime
-
+from odoo.exceptions import ValidationError
 class overtime_detail(models.Model):
     _name = 'overtime_detail'
     _description = "Chi tiết làm thêm"
@@ -22,5 +22,9 @@ class overtime_detail(models.Model):
     def change_wait(self):
         for rec in self:
             rec.status = 'wait'
-
-
+    @api.constrains('ot_time')
+    def _check_ot_time(self):
+        for record in self:
+            if (record.ot_time >16) and (record.ot_time <0.5):
+                raise ValidationError("Khoảng dữ liệu không cho phép")
+    
